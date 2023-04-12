@@ -1,11 +1,11 @@
 const { default: mongoose } = require("mongoose");
 
-const citySchema = mongoose.Schema({
+const tripSchema = mongoose.Schema({
     departure : String,
     arrival : String,
     date : Date,
     price : Number,
 })
 
-const Trip = mongoose.model('trips', citySchema);
+const Trip = mongoose.model('trips', tripSchema);
 module.exports = Trip ;

@@ -12,7 +12,7 @@ router.get('/:departure/:arrival', (req,res) => {
             res.json({Trips : data})
         }
         else {
-            res.json({ error : "Pas de trajet disponible"})
+            res.json({ error : "No trip found"})
         }
     })
        
